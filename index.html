@@ -92,6 +92,9 @@
       const base = 'https://gamete96.github.io/toro-meeboon/pages/';
       frame.src = `${base}${page}.html?uid=${userId}`;
     }
+    function doGet(e) {
+  return HtmlService.createHtmlOutputFromFile('index'); // ชื่อไฟล์ index.html
+}
 
     initLIFF();
   </script>
