@@ -3,99 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ตรอ. มีบุญยนตการ</title>
+  <title>ร้านมีบุญ - ตรอ.มีบุญยนตการ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: "Prompt", sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f7f9fb;
+      font-family: 'Prompt', sans-serif;
+      background: #f2f6f9;
       color: #333;
     }
     header {
-      background: #2d9b9f;
+      background: linear-gradient(135deg, #00c3a5, #0c7bdc);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    .container {
-      padding: 20px;
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
-      border-radius: 15px;
-      margin-top: 20px;
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
     }
-    h1 {
-      color: #2d9b9f;
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      color: #0c7bdc;
+      margin-bottom: 15px;
     }
     ul {
-      list-style: none;
       padding-left: 0;
+      list-style: none;
     }
     ul li {
       padding: 10px 0;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+      border-bottom: 1px solid #e0e0e0;
     }
-    .contact {
-      margin-top: 20px;
-      font-size: 1.1rem;
-      background: #e9f6f6;
-      padding: 15px;
-      border-radius: 10px;
+    ul li:last-child {
+      border-bottom: none;
+    }
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.05rem;
     }
     .btn-line {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
+      margin-top: 15px;
+      padding: 12px 25px;
       background-color: #00c300;
       color: white;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
-      font-size: 1.1rem;
+      border-radius: 30px;
+      transition: 0.2s;
     }
     .btn-line:hover {
-      background-color: #00b000;
+      background-color: #00a600;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 15px;
     }
     footer {
       text-align: center;
-      margin-top: 40px;
       font-size: 0.9rem;
       color: #777;
+      margin: 40px 0 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <h1>👉 ร้านมีบุญ 👈</h1>
-    <p>บริการครบจบเรื่องรถ โดยมืออาชีพ</p>
+    <p>บริการครบวงจรเรื่องรถ โดยมืออาชีพ</p>
   </header>
 
   <div class="container">
-    <h2>✅ บริการของเรา</h2>
-    <ul>
-      <li>✅ รับตรวจสภาพรถ</li>
-      <li>✅ สอบถามราคาต่อภาษี และ พ.ร.บ.</li>
-      <li>✅ ปรึกษางานทะเบียน</li>
-      <li>✅ งานประกันภัยทุกประเภท ทุกบริษัท</li>
-    </ul>
-
-    <div class="contact">
-      <p><strong>📞 ติดต่อสอบถาม</strong></p>
-      <p>085-3293-439 คุณเบ้นซ์</p>
-      <p>062-7146-669 คุณแหม่ม</p>
-      <p>📍 ที่อยู่ดูได้จาก Google Maps</p>
+    <div class="card">
+      <h2>✅ บริการของเรา</h2>
+      <ul>
+        <li>🚗 รับตรวจสภาพรถ</li>
+        <li>📄 สอบถามราคาต่อภาษี และ พ.ร.บ.</li>
+        <li>📋 ปรึกษางานทะเบียน</li>
+        <li>🛡 งานประกันภัยทุกประเภท ทุกบริษัท</li>
+      </ul>
     </div>
 
-    <a href="https://lin.ee/2NFLphs" target="_blank" class="btn-line">💬 ติดต่อผ่าน LINE Official</a>
+    <div class="card contact">
+      <h2>📞 ติดต่อสอบถาม</h2>
+      <p>085-3293-439 คุณเบ้นซ์</p>
+      <p>062-7146-669 คุณแหม่ม</p>
+      <p>📍 ร้านอยู่ตาม Google Maps ด้านล่าง</p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2931979510543!2d100.7388022153166!3d13.755347601386912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29848cb890aef%3A0x4a98c19ab2c58c76!2z4LmA4Lih4Li54LmI4LiB4LmJ4LiU4LmM4Lih4Lit4Liq4Liq4Lij4Liw4LmB4LiU4LmI4LmH4LiK4LmB4Lih4LiZ4LmA4Lil4LiZ4LiU4LmH!5e0!3m2!1sth!2sth!4v1659923439177!5m2!1sth!2sth"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+      <a href="https://lin.ee/2NFLphs" class="btn-line" target="_blank">💬 ติดต่อผ่าน LINE Official</a>
+    </div>
   </div>
 
   <footer>
-    © 2025 ตรอ. มีบุญยนตการ
+    © 2022 ตรอ. มีบุญยนตการ | All rights reserved
   </footer>
 
 </body>
